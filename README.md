@@ -17,4 +17,4 @@
 - JavaScript
 ### Previews
 
-![todo](https://user-images.githubusercontent.com/100521870/205062655-94b886b6-2ef8-438b-9aa8-519b951f5429.PNG)
+![todo](https://user-images.githubusercontent.com/100521870/205064171-65270bd4-e901-4cb7-bfb4-e274fb2f9217.PNG)
