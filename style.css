@@ -1,0 +1,211 @@
+:root {
+  --lightgray: #ECECEC;
+  --darkgray: #A9A9A9;
+}
+
+body {
+  font-family: termina, sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  background: #f3f6f9;
+  font-weight: 300;
+  letter-spacing: .2rem;
+}
+
+h1 {
+  font-family: termina, sans-serif;
+  text-transform: lowercase;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: var(--darkgray);
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: lowercase;
+  font-weight: bolder;
+  padding-top: 2rem;
+  color: var(--darkgray);
+}
+
+/* Button */
+
+button {
+  margin-bottom: 1em;
+  margin-left: 3em;
+  padding: 1em 3em;
+  cursor: pointer;
+  font-size: 0.7rem;
+  background: #f3f6f9;
+  color: #000;
+  letter-spacing: .2rem; 
+  text-transform: lowercase;
+  font-weight: bolder;
+  font-family: termina, sans-serif;
+  border: none;
+  border-radius: .5rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+              -6px -6px 10px rgba(255, 255, 255, .5),
+              6px 6px 8px rgba(255, 255, 255, .075),
+              6px 6px 10px rgba(0, 0, 0, .15);
+}
+
+button:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+              -2px -2px 4px rgba(255, 255, 255, .4),
+              2px 2px 2px rgba(255, 255, 255, .05),
+              2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+button:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+              inset -2px -2px 4px rgba(255, 255, 255, .5),
+              inset 2px 2px 2px rgba(255, 255, 255, .075),
+              inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+
+/* Container */
+.container {
+  padding: 15px 15px;
+  max-width: 800px;
+  margin: auto;
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+.to-do-column {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Input */
+
+input {
+  width: 300px;
+  border-radius: .5em;
+  background: transparent;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: inset 10px 10px 15px -10px #c3c3c3,
+    inset -10px -10px 15px -10px #ffffff;
+}
+
+input[type="text"] {
+  font-family: termina, sans-serif;
+  font-size: 0.7rem;
+  text-transform: lowercase;
+  font-weight: bolder;
+  color: var(--darkgray);
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder{
+  color: var(--darkgray);
+  font-family: termina, sans-serif;
+  text-transform: lowercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+}
+
+.lists div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin: 1em;
+  font-size: 0.7rem;
+  text-transform: lowercase;
+  color: var(--darkgray);
+}
+
+.lists ul {
+  list-style-type: none;
+}
+
+.counter-text {
+  text-align: center;
+  width: 15rem;
+  padding: 0.5em;
+  border-radius: 1em;
+  font-size: 0.7rem;
+  color: #000;
+  text-transform: lowercase;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+              -6px -6px 10px rgba(255, 255, 255, .5),
+              6px 6px 8px rgba(255, 255, 255, .075),
+              6px 6px 10px rgba(0, 0, 0, .15);
+}
+
+.to-do-background {
+  padding: 1.5rem 2rem;
+  padding-left: 10px;
+  border-radius: 10px;
+  width: 18rem;
+  border: none;
+  box-shadow: inset 10px 10px 15px -10px #c3c3c3,
+  inset -10px -10px 15px -10px #ffffff;
+}
+
+/* Style list items */
+.to-do-item, .done-item {
+  margin: .5em;
+  border-radius: 4%;
+  box-shadow: 2px 2px 4px gray;
+  padding: 5px 8px;
+  background: #efefef;
+  border: none;
+  border-radius: .5rem;
+  text-align: center;
+  outline: none;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+              -6px -6px 10px rgba(255, 255, 255, .5),
+              6px 6px 8px rgba(255, 255, 255, .075),
+              6px 6px 10px rgba(0, 0, 0, .15);
+}
+
+/* Style list item specific to to-do-item */
+.to-do-item {
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.to-do-item:hover::after {
+  content: "\2714";
+  width: 20px;
+  height: 20px;
+  color: #000;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 4%;
+}
+
+/* Style list item specific to done-item */
+.done-item {
+  background: transparent;
+}
